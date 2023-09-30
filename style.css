@@ -1,0 +1,356 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Resetando estilos básicos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilos para títulos h1 */
+.h1-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+/* Estilos para títulos h3 */
+.h3-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+/* Estilos para parágrafos de carros */
+.p-carros {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+/* Estilos para parágrafos de carros (variante) */
+.pa-carros {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+/* Estilos para títulos h1 (variante) */
+.h1-carros {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+/* Estilos para o corpo (background) */
+body {
+    background: #eaeaea;
+}
+/* Estilos para o cabeçalho/menu */
+.header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* Estilos para o logotipo */
+.logo {
+    font-size: 25px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Estilos para os links do menu */
+.menu-pg a {
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+}
+/* Efeitos de hover para os links do menu */
+.menu-pg a:hover,
+.menu-pg a.active {
+    color: #0056d8;
+}
+/* Estilos para ícones de redes sociais */
+.rede-social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    color: #0056d8;
+}
+/* Estilos para os links de redes sociais */
+.rede-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+}
+/* Efeitos de hover para os links de redes sociais */
+.rede-social a:hover {
+    border-color: #eaeaea;
+}
+/* Estilos para ícones dentro dos links de redes sociais */
+.rede-social a i {
+    font-size: 24px;
+    color: #eaeaea;
+    transform: rotate(-45deg);
+
+}
+/* Estilos para a seção inicial */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8% 0;
+    overflow: hidden;
+}
+/* Estilos para o conteúdo da seção inicial */
+.home-content {
+    max-width: 630px;
+}
+/* Estilos para o título h1 dentro da seção inicial */
+.home-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+/* Estilos para o título h3 dentro da seção inicial */
+.home-content h3 {
+    font-size: 40px;
+    color: #0056d8;
+}
+/* Estilos para parágrafos dentro da seção inicial */
+.home-content p {
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+/* Estilos para o botão */
+.botao {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #0056d8;
+    border: 2px solid #0056d8;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    font-size: 16px;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+/* Efeitos de hover para o botão */
+.botao:hover {
+    background: transparent;
+    color: #0056d8;
+}
+/* Estilos para a imagem dentro da seção inicial */
+.home-img {
+    position: relative;
+    right: -7%;
+    width: 450px;
+    height: 450px;
+    transform: rotate(45deg);
+
+}
+/* Estilos para o losango dentro da imagem da seção inicial */
+.home-img .rhombus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eaeaea;
+    border: 25px solid #0056d8;
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+}
+/* Estilos para a imagem dentro do losango da seção inicial */
+.home-img .rhombus img {
+    position: absolute;
+    max-width: 750px;
+    transform: rotate(-45deg);
+    top: 110px;
+    left: -250px;
+}
+/* Estilos para o segundo losango dentro da seção inicial */
+.home .rhombus2 {
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    width: 700px;
+    height: 700px;
+    background: #0056d8;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+/* Estilos para a seção de pesquisa de carros */
+.pesquisa-carros {
+    margin-top: 10%;
+    text-align: center;
+}
+/* Estilos para a barra de pesquisa */
+.pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos para o contêiner de serviços */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Estilos para a caixa de serviços */
+.services-container .box {
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para a imagem dentro da caixa de serviços */
+.services-container .box .box-img {
+    width: 100%;
+    height: 200px;
+}
+/* Estilos para a imagem dentro da caixa de serviços */
+.services-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+/* Estilos para parágrafos dentro da caixa de serviços */
+.services-container .box p {
+    padding: 0 10px;
+    border: 1px solid #0056d8;
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+/* Estilos para o título h3 dentro da caixa de serviços */
+.services-container .box h3 {
+    font-weight: 500;
+}
+/* Estilos para o título h2 dentro da caixa de serviços */
+.services-container .box h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0056d8;
+    margin: 0.2rem 0 0.5rem;
+
+}
+/* Estilos para a seção de cabeçalho */
+.heading {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+/* Estilos para o texto com a classe "span" na seção de cabeçalho */
+.heading span {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* Estilos para a classe "heading" */
+.heading {
+    font-size: 2rem;
+}
+/* Estilos para o contêiner da seção de rodapé */
+.footer-pg .container {
+    max-width: 1170px;
+    margin: auto;
+}
+/* Estilos para a linha no rodapé */
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilos para listas não ordenadas */
+ul {
+    list-style: none;
+}
+/* Estilos para a seção de rodapé */
+.footer-pg {
+    background-color: #0056d8;
+    padding: 70px 0;
+    margin-top: 5%;
+
+}
+/* Estilos para as colunas no rodapé */
+.footer-pg-coluna {
+    width: 25%;
+    padding: 0 15px;
+}
+/* Estilos para os títulos nas colunas do rodapé */
+.footer-pg-coluna h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+/* Estilos para um elemento antes do título nas colunas do rodapé */
+.footer-pg-coluna h4 ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+/* Estilos para os itens da lista nas colunas do rodapé */
+.footer-pg ul li:not :last-child {
+    margin-bottom: 10px;
+}
+/* Estilos para os links nos itens da lista nas colunas do rodapé */
+.footer-pg ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+/* Efeitos de hover para os links nos itens da lista nas colunas do rodapé */
+.footer-pg ul li a:hover {
+    color: #fff;
+    padding-left: 10px;
+}
+/* Estilos para os links de redes sociais nas colunas do rodapé */
+.footer-pg-coluna .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+
+}
+/* Efeitos de hover para os links de redes sociais nas colunas do rodapé */
+.footer-pg-coluna .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
